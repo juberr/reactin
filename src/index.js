@@ -1,8 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-//import App from './App';
-import ImageCard from './components/ImageCard'
 import ImageGallery from './components/ImageGallery'
 import reportWebVitals from './reportWebVitals';
 

@@ -20,11 +20,11 @@ class ImageCard extends Component {
         if (!this.state.on) {
             return null;
         };
-        return <div>
-        <img className='CardImage' src={require('../static/images/1.png').default} alt='hello'></img>
-        <h4>{this.state.name}</h4>
+        return <div className='CardImage'>
+        <img  src={`http://127.0.0.1:5000/static/images/${this.props.filename}`} alt='hello'></img>
+        <h4>{this.props.filename}</h4>
         <button onClick={() => this.RemoveElement()}>Delete</button>
-        <a target='_blank' href='../static/images/1.png'><button>View Full size</button></a>
+        <a target='_blank' rel='noreferrer' href={`http://127.0.0.1:5000/static/images/${this.props.filename}`}><button>View Full size</button></a>
     </div>;
     }
     
